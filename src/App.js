@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import RoleSelection from "./components/RoleSelection";
+import UserFlashcards from "./components/UserFlashcards";
+import AdminLogin from "./components/AdminLogin";
+import AdminDashboard from "./components/AdminDashboard";
+import "./App.css";
 
-function App() {
+const App = () => {
+  const [isDarkTheme, setIsDarkTheme] = useState(true);
+
+  useEffect(() => {
+    document.body.classList.toggle("light-theme", !isDarkTheme);
+  }, [isDarkTheme]);
+
+  const toggleTheme = () => {
+    setIsDarkTheme((prevTheme) => !prevTheme);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="theme-toggle">
+        <input
+          type="checkbox"
+          id="theme-toggle"
+          checked={isDarkTheme}
+          onChange={toggleTheme}
+        />
+        <label htmlFor="theme-toggle"></label>
+      </div>
+      <Routes>
+        <Route path="/" element={<RoleSelection />} />
+        <Route path="/user" element={<UserFlashcards isDarkTheme={isDarkTheme} />} />
+        <Route path="/admin" element={<AdminLogin />} />
+        <Route path="/dashboard" element={<AdminDashboard isDarkTheme={isDarkTheme} />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
