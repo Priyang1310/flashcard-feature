@@ -18,12 +18,12 @@ This project is built using the MERN stack (MySQL, Express, React, Node.js) (I k
 To get started with the project, follow these steps:
 ### Clone the repository:
 ```bash
-    **git clone https://github.com/Priyang1310/takeUforwardtask**
+    git clone https://github.com/Priyang1310/takeUforwardtask
 ```
 
 ### Frontend
 
-1. **Clone the repository:**
+1. **Navigate to the frontend folder**
     ```bash
     
     cd frontend
@@ -43,7 +43,7 @@ This will start the application on `http://localhost:3000`.
 
 ### Backend
 
-1. **Clone the repository:**
+1. **Navigate to the backend folder:**
     ```bash
     
     cd backend
