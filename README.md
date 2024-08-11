@@ -59,7 +59,7 @@ This will start the application on `http://localhost:3000`.
     nodemon index.js
     ```
 
-This will start the application on `http://localhost:3000`.
+This will run the backend on `http://localhost:5000`.
 
 
 ## Usage
