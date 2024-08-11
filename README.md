@@ -16,10 +16,16 @@ This project is built using the MERN stack (MySQL, Express, React, Node.js) (I k
 ## Installation
 
 To get started with the project, follow these steps:
+**Clone the repository:**
+```bash
+    **git clone https://github.com/Priyang1310/takeUforwardtask**
+```
+
+### Frontend
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/Priyang1310/takeUforwardtask
+    
     cd frontend
     ```
 
