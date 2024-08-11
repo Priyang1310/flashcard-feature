@@ -16,7 +16,7 @@ This project is built using the MERN stack (MySQL, Express, React, Node.js) (I k
 ## Installation
 
 To get started with the project, follow these steps:
-**Clone the repository:**
+### Clone the repository:
 ```bash
     **git clone https://github.com/Priyang1310/takeUforwardtask**
 ```
@@ -40,6 +40,27 @@ To get started with the project, follow these steps:
     ```
 
 This will start the application on `http://localhost:3000`.
+
+### Backend
+
+1. **Clone the repository:**
+    ```bash
+    
+    cd backend
+    ```
+
+2. **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3. **Start the development server:**
+    ```bash
+    nodemon index.js
+    ```
+
+This will start the application on `http://localhost:3000`.
+
 
 ## Usage
 
